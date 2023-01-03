@@ -1,0 +1,51 @@
+{
+
+    "title":"Calibrar Sembradora",
+    "tabs": {
+
+        "wheel": "Rueda",
+        "distance": "Distancia"
+    },
+    "wheel": {
+
+        "title": "Calcular por Diámetro de la Rueda",
+        "diameter": "Diámetro Rueda en Centímetros",
+        "diameter_error": "Ingrese el Diámetro de la Rueda en Centímetros",
+        "laps": "Cantidad de Vueltas",
+        "laps_error": "Ingrese la Cantidad de Vueltas",
+        "broad": "Ancho de trabajo de la sembradora en Metros",
+        "broad_error": "Ingrese el Ancho de trabajo de la sembradora en Metros",
+        "kilos": "Kilogramos de Semilla por Hectárea",
+        "kilos_error": "Ingrese los Kilogramos de Semilla por Hectárea",
+        "lines": "Cantidad de Líneas de trabajo",
+        "lines_error": "Ingrese la Cantidad de Líneas de trabajo",
+        "number_error": "Ingrese un número válido",
+        "calculate": "Calcular"
+    },
+    "distance": {
+
+        "title": "Calcular por Distancia",
+        "distance": "Distancia Recorrida en Metros",
+        "distance_error": "Ingrese la Distancia Recorrida en Metros",
+        "broad": "Ancho de trabajo de la sembradora en Metros",
+        "broad_error": "Ingrese el Ancho de trabajo de la sembradora en Metros",
+        "kilos": "Kilogramos de Semilla por Hectárea",
+        "kilos_error": "Ingrese los Kilogramos de Semilla por Hectárea",
+        "lines": "Cantidad de Líneas de trabajo",
+        "lines_error": "Ingrese la Cantidad de Líneas de trabajo",
+        "number_error": "Ingrese un número válido",
+        "calculate": "Calcular"
+    }, "resumen": { 
+        "distance": "Distancia Lineal",
+        "area": "Area de Trabajo",
+        "amount_of_seed": "Cantidad de Semilla",
+        "amount_of_seed_per_linea": "Cantidad de Semilla por Línea"
+    }, "dialog": { 
+        "title": "Resumen",
+        "save": "Guardar",
+        "exit": "Salir",
+        "seve_title": "Éxito",
+        "seve_ok": "Los datos fueron guardados con éxito."
+    }
+
+}
