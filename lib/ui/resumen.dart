@@ -31,7 +31,7 @@ class Resumen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     NumberFormat numberFormat = NumberFormat.decimalPatternDigits(
-        locale: Platform.localeName, decimalDigits: 2);
+        locale: Platform.localeName ?? "es_UY", decimalDigits: 2);
 
     return Center(
       child: Column(children: [

@@ -7,8 +7,8 @@ CalibracionTotalModel calcularModel(CalibracionModel calibracion) {
   if (calibracion is CalibracionRuedaModel) {
     CalibracionRuedaModel aux = calibracion;
 
-    double distanciaMetros = calcularDistanciaMetros(
-        calcularPerimetroCm(aux.diametroRueda), aux.cantidadVueltas);
+    double distanciaMetros =
+        calcularDistanciaMetros(aux.diametroRueda, aux.cantidadVueltas);
 
     return calcular(distanciaMetros, aux.anchoTrabajo, aux.cantidadLineas,
         aux.cantidadKgPorHectarea);
@@ -38,10 +38,6 @@ CalibracionTotalModel calcular(
       totalPorLineaGr: totalGr);
 }
 
-double calcularPerimetroCm(double diametroRuedaCm) {
-  return diametroRuedaCm * pi;
-}
-
 double calcularDistanciaMetros(double perimetroCm, int cantidadVueltas) {
-  return perimetroCm * pi / 100.0;
+  return (perimetroCm * pi / 100.0) * cantidadVueltas;
 }
