@@ -34,18 +34,24 @@ class Resumen extends StatelessWidget {
         locale: Platform.localeName ?? "es_UY", decimalDigits: 2);
 
     return Center(
-      child: Column(children: [
-        _label("${LocaleKeys.resumen_distance.tr}:",
-            "${numberFormat.format(distanciaLineal)} M"),
-        _label("${LocaleKeys.resumen_area.tr}:",
-            "${numberFormat.format(areaTrabajoMaquina)} M2"),
-        _label("${LocaleKeys.resumen_amount_of_seed.tr}:",
-            "${numberFormat.format(semillaTrabajoMaquinaKg)} Kg"),
-        _label("${LocaleKeys.resumen_amount_of_seed.tr}:",
-            "${numberFormat.format(semillaTrabajoMaquinaGr)} Gr"),
-        _label("${LocaleKeys.resumen_amount_of_seed_per_linea.tr}:",
-            "${numberFormat.format(semillaPorLineaGr)} Gr"),
-      ]),
+      child: Column(
+        children: [
+          _label("${LocaleKeys.resumen_distance.tr}:",
+              "${numberFormat.format(distanciaLineal)} M"),
+          Divider(),
+          _label("${LocaleKeys.resumen_area.tr}:",
+              "${numberFormat.format(areaTrabajoMaquina)} M2"),
+          Divider(),
+          _label("${LocaleKeys.resumen_amount_of_seed.tr}:",
+              "${numberFormat.format(semillaTrabajoMaquinaKg)} Kg"),
+          Divider(),
+          _label("${LocaleKeys.resumen_amount_of_seed.tr}:",
+              "${numberFormat.format(semillaTrabajoMaquinaGr)} Gr"),
+          Divider(),
+          _label("${LocaleKeys.resumen_amount_of_seed_per_linea.tr}:",
+              "${numberFormat.format(semillaPorLineaGr)} Gr"),
+        ],
+      ),
     );
   }
 
@@ -53,9 +59,11 @@ class Resumen extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        Text(
-          description,
-          style: TextStyle(fontWeight: FontWeight.bold),
+        Flexible(
+          child: Text(
+            description,
+            style: TextStyle(fontWeight: FontWeight.bold),
+          ),
         ),
         _separador(),
         Flexible(child: Text(text))
